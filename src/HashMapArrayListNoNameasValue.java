@@ -7,6 +7,7 @@ public class HashMapArrayListNoNameasValue {
         HashMap<String, ArrayList<String>> schoolSupplies = new HashMap<>();
 
         //initialization of HashMap with empty ArrayLists as values
+
         schoolSupplies.put("Math", new ArrayList<>());
         schoolSupplies.put("Language Arts", new ArrayList<>());
         schoolSupplies.put("Physical Education", new ArrayList<>());
