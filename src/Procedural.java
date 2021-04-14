@@ -6,6 +6,7 @@ public class Procedural {
         int secondNumber = 4;
 
         //performing operations
+
         int sum = firstNumber + secondNumber;
         int difference = firstNumber - secondNumber;
         int product = firstNumber * secondNumber;
