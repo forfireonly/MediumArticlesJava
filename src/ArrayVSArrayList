@@ -1,0 +1,58 @@
+import java.util.Arrays;
+import java.util.ArrayList;
+import static java.lang.System.out;
+import java.util.List;
+
+public class Main
+{
+	public static void main(String[] args) {
+	  //creating an ArrayList 
+        ArrayList<Integer> ls = new ArrayList<>();
+        ls.add(1);
+        ls.add(2);
+        ls.add(3);
+        ls.add(4);
+        
+        //checking on class of the object
+        if (ls.get(1) instanceof Integer) System.out.println("Class Integer");
+        
+        /*converting to array - does not work
+         *int[] arr = ls.toArray();
+         *Integer[] arr1 = ls.toArray();*/
+        
+        //converting to an Object array and checking type of array members
+        Object[] arr = ls.toArray();
+        if (arr[1] instanceof Object) out.println("Class Object");
+        
+        //converting to Int array
+        Integer[] arrInt = ls.toArray(new Integer[0]);
+        if (arrInt[1] instanceof Integer) out.println("Class Integer");
+	    out.println("The size of created array is " + arrInt.length);
+	    // int[] arrint = ls.toArray(new int[0]);
+	    
+	    //Specifying array of bigger size
+	    Integer[] arrIntBig = ls.toArray(new Integer[10]);
+	    out.println(arrIntBig.length);
+	    out.println(arrIntBig[0]);
+	    out.println(arrIntBig[6]);
+	    
+	    //specifying array of smaller size
+	    Integer[] arrIntSmall = ls.toArray(new Integer[2]);
+	    out.println(arrIntSmall.length);
+	    
+	    //int[] arrOfint = ls.toArray(new int[0]);
+	    
+	    //converting array into List
+	    Integer[] arrOfIntegers = new Integer[]{1,2,3,4};
+	    
+	    List<Integer> lsOfIntegers = Arrays.asList(arrOfIntegers);
+	    out.println("type of members is Integer " + (lsOfIntegers.get(0) instanceof Integer));
+	    out.println(lsOfIntegers.get(0));
+	    
+	    //lsOfIntegers.remove(0);
+	    
+	    
+	    arrOfIntegers[0] = 10;
+	    out.println(lsOfIntegers.get(0));
+	}
+}
