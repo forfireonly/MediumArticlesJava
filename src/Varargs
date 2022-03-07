@@ -1,0 +1,25 @@
+import static java.lang.System.out;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        //passing an array
+       // doSomething(new String[]{"One", "Two", "Three"});
+        
+        //pass elements
+        doSomething("One","Two","Three");
+        
+        //pass nothing
+        //doSomething();
+        
+        //doSomething(null);
+     }
+     
+     static void doSomething(String ...strArr) {
+         
+         out.println(strArr[1]);
+         //out.println(strArr.length);
+         
+         //out.println(strArr.getClass().isArray());
+     }
+}
