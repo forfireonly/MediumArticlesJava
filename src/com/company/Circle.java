@@ -8,9 +8,9 @@ public class Circle implements Drawable {
         out.println("circle");
     }
 
-    public String toString() {
+   /* public String toString() {
         return "I am a circle";
-    }
+    }*/
 
     public static void main(String[] args) {
         //instantiate class Circle
@@ -30,6 +30,10 @@ public class Circle implements Drawable {
         circleToDraw.draw();
         myRectangle.draw();
         myTriangle.draw();
+
+        out.println(myCircle);
+        out.println(circleToDraw);
+        circleToDraw.draw();
 
     }
 }

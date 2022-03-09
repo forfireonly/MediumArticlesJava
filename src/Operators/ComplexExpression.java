@@ -10,7 +10,7 @@ public class ComplexExpression {
         System.out.println("y=" + y);
 
         x = 1;
-        y = ++x  + ++x * 5 / x-- + x-- + ++x;
+       // y = ++x + ++x * 5 / x-- + x-- + ++x;
 
         System.out.println("x=" + x);
         System.out.println("y=" + y);
