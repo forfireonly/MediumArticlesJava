@@ -3,8 +3,8 @@ package com.company;
 public class SwitchStatement {
 
     public static void main(String... input){
-        String name = "Anna";
-        //final String name = "Anna";
+        //String name = "Anna";
+        final String name = "Anna";
 
         switch("Anna"){
             case "Boris":
@@ -17,7 +17,7 @@ public class SwitchStatement {
             case "Mary":
                 System.out.println("Eat, sleep, code, repeat");
                 break;
-            case 5:
+            case "5":
                 System.out.println();
             default:
         }
