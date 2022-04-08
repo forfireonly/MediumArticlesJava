@@ -1,0 +1,30 @@
+package examples;
+
+import static java.lang.System.out;
+public class Driver{
+    public static void main(String... input){
+        Dog myDog = new Dog();
+        myDog.name = "Grey";
+        myDog.longFur = false;
+        myDog.printInfo();
+    }
+}
+
+class Animal{
+    //public and protected modifiers allow access to members in different packages
+    public boolean longFur;
+    protected String name;
+    
+    //default only in the same package
+    void printInfo() {
+        if(longFur) {
+            out.println(name + " has long fur");
+        } else {
+            out.println(name + " has short fur");
+        }
+    }
+
+
+}
+
+class Dog extends Animal{}
