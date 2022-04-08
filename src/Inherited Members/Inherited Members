@@ -20,7 +20,7 @@ class Animal{
         if(longFur) {
             out.println(name + " has long fur");
         } else {
-            out.println(name + " has shirt fur");
+            out.println(name + " has short fur");
         }
     }
 
