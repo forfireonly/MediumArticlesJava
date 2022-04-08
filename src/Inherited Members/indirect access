@@ -1,0 +1,34 @@
+package examples;
+
+import static java.lang.System.out;
+public class Driver{
+    public static void main(String... input){
+        Dog myDog = new Dog();
+        myDog.name = "Grey";
+        myDog.longFur = false;
+        myDog.printInfo();
+        
+    }
+}
+
+class Animal{
+    //public and protected modifiers allow access to members in different packages
+    public boolean longFur;
+    protected String name;
+    private int age = 7;
+    
+    int getAge() {
+        return age;
+    }
+    
+}
+
+class Dog extends Animal{
+    void printInfo() {
+        if(super.longFur) {
+            out.println(super.name + " has long fur and is " + getAge() );
+        } else {
+            out.println(super.name + " has short fur and is " + getAge());
+        }
+    }
+}
